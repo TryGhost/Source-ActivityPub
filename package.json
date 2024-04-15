@@ -9,13 +9,16 @@
     "license": "MIT",
     "scripts": {
         "dev": "gulp",
+        "dev:all": "concurrently \"yarn dev\" \"yarn tailwind:dev\"",
         "zip": "gulp zip",
         "test": "gscan .",
         "test:ci": "gscan --fatal --verbose .",
-        "pretest": "gulp build",
+        "pretest": "gulp build && yarn tailwind:build",
         "preship": "yarn test",
         "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
-        "postship": "git fetch && gulp release"
+        "postship": "git fetch && gulp release",
+        "tailwind:build": "npx tailwindcss -i ./assets/css/tw.css -o ./assets/built/tw.css --minify",
+        "tailwind:dev": "npx tailwindcss -i ./assets/css/tw.css -o ./assets/built/tw.css --watch"
     },
     "author": {
         "name": "Ghost Foundation",
@@ -44,6 +47,7 @@
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
         "beeper": "2.1.0",
+        "concurrently": "^8.2.2",
         "cssnano": "5.1.12",
         "gscan": "4.39.4",
         "gulp": "4.0.2",
@@ -55,7 +59,8 @@
         "inquirer": "8.2.4",
         "postcss": "8.2.13",
         "postcss-easy-import": "4.0.0",
-        "pump": "3.0.0"
+        "pump": "3.0.0",
+        "tailwindcss": "^3.4.3"
     },
     "browserslist": [
         "defaults"
@@ -213,5 +218,6 @@
         "extends": [
             "@tryghost:theme"
         ]
-    }
+    },
+    "dependencies": {}
 }

@@ -13,7 +13,10 @@
 
     {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}">
-
+    {{#is "home"}}
+        <link rel="stylesheet" type="text/css" href="{{asset "built/tw.css"}}">
+    {{/is}}
+    
     {{!-- Custom background color --}}
     <style>
         :root {
