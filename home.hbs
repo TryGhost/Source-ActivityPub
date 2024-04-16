@@ -1,89 +1,111 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
 <div class="bg-black text-white">
-    <div class="max-w-[840px] my-0 mx-auto text-center text-balance flex items-center flex-col">
-        <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[130px] h-[130px] mb-8" />
-        <h1 class="font-bold text-8xl leading-none mb-8">It’s time to bring back the open web.</h1>
-        <p class="text-[3.4rem] leading-snug">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
+    <div class="max-w-5xl my-[16vmin] mx-auto px-4 sm:px-6 text-center text-balance flex items-center flex-col">
+        <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[130px] h-[130px] mb-16" />
+        <h1 class="font-bold text-8xl leading-none mb-7">It’s time to bring back the open web.</h1>
+        <p class="text-4xl leading-snug">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
     </div>
     <!-- TODO: form -->
-</div>
-<div class="font-serif bg-black text-white text-xl">
-    <div class="max-w-7xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-5">
-        <p class="first-letter:float-left first-letter:leading-none first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
-        <p>Then the social networks came. They removed the complexity of running a server. They added simple social interactions. Follow. Like. Reply. Everything got easier.</p>
-        <p>But convenience came at a cost, and slowly  the way we consume information became less like home cooking and more like McDonalds.</p>
-        <p>This fast food algorithm diet was deliberately designed by technology companies to profit from our addictions. And after two decades of indulgence, the cracks in our collective consciousness are all around us.</p>
-        <p>The time has come to take back control, and there are good reasons to be optimistic.</p>
-        <p>For the past few years the choice has been difficult. Either participate in a closed networks a the mercy of algorithms, or set up an independent website at the expense of your growth. Now, though, that entire dynamic is getting flipped upside down.</p>
-        <p>Email gave us private messaging technology that isn’t owned by a single company. No algorithms, no lock-in, no bullshit.</p>
-        <p>Now, ActivityPub is doing the same for social technology. It’s a protocol that allows people across different platforms and websites to follow, like and reply to one another. No algorithms, no lock-in.... no bullshit.</p>
-        <p>The open web is coming back, and with it returns diversity. You can both publish independently and grow faster than ever before with followers from all over the world, across all sorts of different platforms.</p>
-    </div>
-</div>
-<div class="bg-black text-white text-xl">
-    <div class="max-w-[1280px] my-0 mx-auto font-serif">
-        <div>
-            <p>Closed social networks compete with each other for users, so your reach is limited to people on the same platform.</p>
-            <p>The open web collaborates for users, so you get access to every person across every platform. There are over 5.5 billion people using the internet in 2024, and email — the web’s original open protocol — is still larger than any platform that has been invented before or since.</p>
-            <p>ActivityPub is headed in the same direction, because open protocols don’t depend on any one company succeeding. They just keep growing as more companies adopt them.</p>
-        </div>
-        <div>
-            <h2>Platforms by number of users</h2>
-            <!-- TODO: charts -->
+    <div class="font-serif bg-black text-white text-xl px-4 sm:px-6">
+        <div class="max-w-7xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
+            <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
+            <p>Then the social networks came. They removed the complexity of running a server. They added simple social interactions. Follow. Like. Reply. Everything got easier.</p>
+            <p>But convenience came at a cost, and slowly  the way we consume information became less like home cooking and more like McDonalds.</p>
+            <p>This fast food algorithm diet was deliberately designed by technology companies to profit from our addictions. And after two decades of indulgence, the cracks in our collective consciousness are all around us.</p>
+            <p>The time has come to take back control, and there are good reasons to be optimistic.</p>
+            <p>For the past few years the choice has been difficult. Either participate in a closed networks a the mercy of algorithms, or set up an independent website at the expense of your growth. Now, though, that entire dynamic is getting flipped upside down.</p>
+            <p>Email gave us private messaging technology that isn’t owned by a single company. No algorithms, no lock-in, no bullshit.</p>
+            <p>Now, ActivityPub is doing the same for social technology. It’s a protocol that allows people across different platforms and websites to follow, like and reply to one another. No algorithms, no lock-in.... no bullshit.</p>
+            <p>The open web is coming back, and with it returns diversity. You can both publish independently and grow faster than ever before with followers from all over the world, across all sorts of different platforms.</p>
         </div>
     </div>
-</div>
-<div class="bg-black">
-    <blockquote class="max-w-6xl mx-auto my-0 text-center" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
-        <p class="text-white text-6xl font-bold leading-none mb-12">“The fundamental shift, from platforms to protocols, appears to have momentum in a way it never has before.”</p>
-        <footer class="font-medium text-3xl text-teal-300">—David Pierce // <cite class="non-italic">The Verge -></cite></footer>
-    </blockquote>
+    <div class="text-xl px-4 sm:px-6">
+        <div class="max-w-7xl my-24 mx-auto font-serif grid grid-cols-12 gap-[8vmin]">
+            <div class="col-span-4 *:mb-8 *:text-pretty">
+                <p>Closed social networks compete with each other for users, so your reach is limited to people on the same platform.</p>
+                <p>The open web collaborates for users, so you get access to every person across every platform. There are over 5.5 billion people using the internet in 2024, and email — the web’s original open protocol — is still larger than any platform that has been invented before or since.</p>
+                <p>ActivityPub is headed in the same direction, because open protocols don’t depend on any one company succeeding. They just keep growing as more companies adopt them.</p>
+            </div>
+            <div class="col-span-8">
+                <h2>Platforms by number of users</h2>
+                <!-- TODO: charts -->
+            </div>
+        </div>
+    </div>
+    <div class="px-4 sm:px-6 mb-24">
+        <blockquote class="max-w-6xl mx-auto my-0 text-center" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
+            <p class="text-white text-6xl font-bold leading-none mb-12 text-balance">“The fundamental shift, from platforms to protocols, appears to have momentum in a way it never has before.”</p>
+            <footer class="font-medium text-3xl text-teal-300">David Pierce // <cite class="not-italic">The Verge -></cite></footer>
+        </blockquote>
+    </div>
 </div>
 
 <div class="bg-amber-50">
-    <div class="my-0 mx-auto max-w-2xl mt-48">
-        <h2 class="font-bold text-5xl leading-tight">So, what are we going to do with all this <span class="text-rose-500 italic">momentum</span>?</h2>
-        <div class="font-serif text-[20px]">
-            <p class="mb-6">In 2024, Ghost is adopting ActivityPub and connecting with other federated platforms across the web.</p>
-            <p class="mb-6">This means that, soon, Ghost publishers will be able to follow, like and interact with one another in the same way that you would normally do on a social network — but on your own website.</p>
-            <p class="mb-6">The difference, of course, is that you’ll also be able to follow, like, and interact with users on Mastodon, Threads, Flipboard, Buttondown, Medium, Tumblr, WordPress, PeerTube, Pixelfed... or any other platform that has adopted ActivityPub, too. You don’t need to limit yourself to following people who happen to use the same platform as you.</p>
-        </div>
-    </div>
-
-    <div class="relative grid grid-cols-[minmax(0,_1fr)_minmax(0,_2fr)] gap-16 items-center overflow-hidden w-full max-w-[100vw] pr-[max(5vw,(100vw_-_1160px)_/_2)] pl-[max(5vw,(100vw_-_1160px)_/_2)]">
-        <div>
-            <h2 class="font-bold text-5xl leading-tight mb-10">Follow whoever you like, wherever they are.</h2>
-            <div class="font-serif text-[20px] text-pretty">
-                <p class="mb-6">We’re building an ActivityPub feed directly into Ghost to allow you to follow people, publications and topics from around the web that interest and inspire you.</p>
-                <p class="mb-6">You can already subscribe to Ghost sites using email or RSS, but now you’ll be able to subscribe using ActivityPub and have fresh content from all your favorite places delivered to a single, unified place. The same place you already go when you want to publish yourself.</p>
-                <p class="mb-6">When you do publish, your posts will appear in other people’s feeds in Ghost... and in Mastodon, and everywhere else.</p>
-            </div>
-        </div>
-        <div class="w-[1232px] rounded-[6px] border-solid border-amber-900/15 border overflow-hidden shadow-juicy">
-            <img src="{{asset '/images/ghost-activity-pub-01.png'}}" alt="Ghost ActivityPub" />
-        </div>
-    </div>
-
-    <div class="relative grid grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)] gap-16 items-center overflow-hidden w-full max-w-[100vw] pr-[max(5vw,(100vw_-_1160px)_/_2)] pl-[max(5vw,(100vw_-_1160px)_/_2)]">
-        <div class="w-[1232px] rounded-[6px] border-solid border-amber-900/15 border overflow-hidden shadow-juicy">
-            <img src="{{asset '/images/ghost-activity-pub-02.png'}}" alt="Ghost ActivityPub" />
-        </div>
-        <div>
-            <h2 class="font-bold text-5xl leading-tight mb-10">Enjoy a simple, relaxed reading experience.</h2>
-            <div class="font-serif text-[20px] text-pretty">
-                <p>Long-form content deserves a dedicated design so you can read in peace, much like the way email newsletters show up in your inbox.</p>
-                <p>The great thing about ActivityPub is that each platform can design its own experience around how to present content, whilst still remaining compatible with everything else.</p>
-                <p>We’ve spent the past 10 years designing a great writing experience with Ghost. Now, for the first time, we’re going to work on designing a great reading experience, too. Which is cool because it turns out that people who write a lot also tend to read a lot.</p>
-                <p>Who’d have thought?</p>
+    <div class="mt-32 max-w-7xl mx-auto grid grid-cols-12 gap-[8vmin]">
+        <div class="col-span-12 md:col-span-4 md:col-start-5">
+            <h2 class="font-bold text-3xl leading-tight mb-3">So, what are we going to do with all this <span class="text-rose-500 italic">momentum</span>?</h2>
+            <div class="font-serif text-xl *:mb-6 *:text-pretty">
+                <p>In 2024, Ghost is adopting ActivityPub and connecting with other federated platforms across the web.</p>
+                <p>This means that, soon, Ghost publishers will be able to follow, like and interact with one another in the same way that you would normally do on a social network — but on your own website.</p>
+                <p>The difference, of course, is that you’ll also be able to follow, like, and interact with users on Mastodon, Threads, Flipboard, Buttondown, Medium, Tumblr, WordPress, PeerTube, Pixelfed... or any other platform that has adopted ActivityPub, too. You don’t need to limit yourself to following people who happen to use the same platform as you.</p>
             </div>
         </div>
     </div>
 
-    <div class="max-w-[1280px] my-0 mx-auto">
-        <h2 class="font-bold text-5xl leading-tight mb-10">A universal way for people to subscribe to your work.</h2>
-        <img src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" />
-        <div class="columns-3 font-serif text-xl">
+    <div class="relative overflow-hidden py-32 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid gap-[8vmin] grid-cols-12 items-center">
+                <div class="col-span-12 lg:col-span-4 mt-12">
+                    <h2 class="font-bold text-3xl leading-tight mb-6">Follow whoever you like, wherever they are.</h2>
+                    <div class="font-serif text-xl leading-snug text-pretty *:mb-6">
+                        <p>We’re building an ActivityPub feed directly into Ghost to allow you to follow people, publications and topics from around the web that interest and inspire you.</p>
+                        <p>You can already subscribe to Ghost sites using email or RSS, but now you’ll be able to subscribe using ActivityPub and have fresh content from all your favorite places delivered to a single, unified place. The same place you already go when you want to publish yourself.</p>
+                        <p>When you do publish, your posts will appear in other people’s feeds in Ghost... and in Mastodon, and everywhere else.</p>
+                    </div>
+                </div>
+                <div class="col-span-8">
+                    <div class="w-screen h-auto mt-12">
+                        <div class="max-w-7xl overflow-hidden shadow-juicy border-amber-900/15 border rounded-[6px]">
+                            <img src="{{asset '/images/ghost-activity-pub-01.png'}}" alt="Ghost ActivityPub" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative overflow-hidden py-32 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid gap-[8vmin] grid-cols-12 items-center">
+                <div class="col-span-8 justify-self-end">
+                    <div class="w-screen h-auto mt-12 flex justify-end">
+                        <div class="max-w-7xl overflow-hidden shadow-juicy border-amber-900/15 border rounded-[6px]">
+                            <img src="{{asset '/images/ghost-activity-pub-02.png'}}" alt="Ghost ActivityPub" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 mt-12">
+                    <h2 class="font-bold text-3xl leading-tight mb-6">Enjoy a simple, relaxed reading experience.</h2>
+                    <div class="font-serif text-xl leading-snug text-pretty *:mb-6">
+                        <p>Long-form content deserves a dedicated design so you can read in peace, much like the way email newsletters show up in your inbox.</p>
+                        <p>The great thing about ActivityPub is that each platform can design its own experience around how to present content, whilst still remaining compatible with everything else.</p>
+                        <p>We’ve spent the past 10 years designing a great writing experience with Ghost. Now, for the first time, we’re going to work on designing a great reading experience, too. Which is cool because it turns out that people who write a lot also tend to read a lot.</p>
+                        <p>Who’d have thought?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6">
+        <div class="flex items-center mb-10 gap-8">
+            <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-[144px] h-auto" />
+            <h2 class="font-bold text-[40px] leading-tight">A universal way for people to subscribe to your work.</h2>
+        </div>
+            
+        <img src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" class="shadow-juicy rounded-[6px] mb-20" />
+        <div class="columns-3 font-serif text-xl *:text-pretty *:mb-6 gap-[40px] leading-snug border-b pb-24 border-b-amber-50/30">
             <p>ActivityPub is a lot like email, and Ghost already supports email subscriptions. This means we can use the same interface to support both. Your audience enters whatever address they’re used to subscribing to things with, and Ghost figures out the rest.</p>
             <p>David Pierce of The Verge once said about ActivityPub usernames: “just make it look like email addresses, people!” — we agree.</p>
             <p>Why is this the 2nd time we’re quoting the editor of The Verge by name?</p>
@@ -94,53 +116,64 @@
         </div>
     </div>
 
-    <div class="max-w-[1280px] my-8 mx-auto">
-        <h2 class="font-bold text-5xl leading-tight mb-10">So how’s all this going to work?</h2>
-        <div class="font-serif text-3xl">
-            <p>We’re not sure yet! Networks tend to work best when they’re shaped by the people who use them. So, rather than going away and working on this quietly behind closed doors, we’re announcing this as we build it out in the open.</p>
-            <p>What you’re looking at here is our first step: Sharing some initial ideas, and asking for your feedback. Subscribe below to follow along with the build diary, contribute your ideas, and get early access to test ActivityPub in Ghost.</p>
+    <div class="max-w-7xl py-24 mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-12 gap-[8vmin]">
+            <div class="col-span-12 md:col-span-8 md:col-start-0">
+                <h2 class="font-bold text-[40px] leading-tight mb-10">So how’s all this going to work?</h2>
+                <div class="font-serif text-3xl *:text-pretty *:mb-6 leading-normal">
+                    <p>We’re not sure yet! Networks tend to work best when they’re shaped by the people who use them. So, rather than going away and working on this quietly behind closed doors, we’re announcing this as we build it out in the open.</p>
+                    <p>What you’re looking at here is our first step: Sharing some initial ideas, and asking for your feedback. Subscribe below to follow along with the build diary, contribute your ideas, and get early access to test ActivityPub in Ghost.</p>
+                </div>
+                <!-- TODO: add form -->
+            </div>
         </div>
     </div>
 
-    <div class="grid grid-cols-3 max-w-[1280px] my-7 mx-auto">
-        <blockquote class="text-xl leading-snug font-serif" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
-            <p class="mb-12">Our dream for the fediverse is a world in which you don't have to make a screenshot to share something from one network into another network. The fediverse is all one big network. It's all connected.</p>
-            <footer class="flex flex-col">
-                <span>Evan Prodromou</span>
-                <span class="opacity-40">Co-Author of ActivityPub</span>
-            </footer>
-        </blockquote>
-        <blockquote class="text-xl leading-snug font-serif" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
-            <p class="mb-12">The whole point of ActivityPub as an open protocol is to turn Twitter/Instagram-like social networking into something more akin to email: truly open.</p>
-            <footer class="flex flex-col">
-                <span>John Gruber</span>
-                <span class="opacity-40">Daring Fireball</span>
-            </footer>
-        </blockquote>
-        <blockquote class="text-xl leading-snug font-serif" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
-            <p class="mb-12">The core idea that social networks could be more like email — in which different platforms flow into the same two-way feed for consumers, perhaps with all their rich formatting — is gathering momentum.</p>
-            <footer class="flex flex-col">
-                <span>Ben Smith</span>
-                <span class="opacity-40">Founder of Semafor</span>
-            </footer>
-        </blockquote>
+    <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6 pt-24 border-t border-t-stone-800/20">
+        <div class="grid grid-cols-12 gap-[8vmin]">
+            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">Our dream for the fediverse is a world in which you don't have to make a screenshot to share something from one network into another network. The fediverse is all one big network. It's all connected.</p>
+                <footer class="flex flex-col">
+                    <span>Evan Prodromou</span>
+                    <span class="opacity-40">Co-Author of ActivityPub</span>
+                </footer>
+            </blockquote>
+            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">The whole point of ActivityPub as an open protocol is to turn Twitter/Instagram-like social networking into something more akin to email: truly open.</p>
+                <footer class="flex flex-col">
+                    <span>John Gruber</span>
+                    <span class="opacity-40">Daring Fireball</span>
+                </footer>
+            </blockquote>
+            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">The core idea that social networks could be more like email — in which different platforms flow into the same two-way feed for consumers, perhaps with all their rich formatting — is gathering momentum.</p>
+                <footer class="flex flex-col">
+                    <span>Ben Smith</span>
+                    <span class="opacity-40">Founder of Semafor</span>
+                </footer>
+            </blockquote>
+        </div>
     </div>
 </div>
 
-<div class="bg-black text-white">
-    <div class="max-w-[800px] my-0 mx-auto">
-        <h2 class="font-bold text-3xl leading-tight mb-4">Isn’t ActivityPub a microblogging thing?</h2>
-        <p class="font-serif text-xl">No! ActivityPub is a protocol, like email. You can use it for whatever you like. Mastodon and Threads are built around short-form content, Pixelfed is built around images, Peertube is built around video. Ghost is going to be flexible, but generally built around long-form content.</p>
+<div class="bg-black text-white py-32">
+    <div class="max-w-3xl my-0 mx-auto">
+        <h2 class="text-8xl mb-20 font-bold text-center">FAQ</h2>
 
-        <h2 class="font-bold text-3xl leading-tight mb-4">Are you working together with other platforms on this?</h2>
-        <p class="font-serif text-xl">Yes! Our friends at Buttondown are building ActivityPub support right now too, so we’re collaborating with them to make sure our products play nicely together. If any other companies want to work together, drop us an email on activitypub@ghost.org. If Google, Apple and Samsung can collaborate on Matter to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
+        <h2 class="font-bold text-3xl leading-tight mb-2">Isn’t ActivityPub a microblogging thing?</h2>
+        <p class="font-serif text-xl mb-20">No! ActivityPub is a protocol, like email. You can use it for whatever you like. Mastodon and Threads are built around short-form content, Pixelfed is built around images, Peertube is built around video. Ghost is going to be flexible, but generally built around long-form content.</p>
 
-        <h2 class="font-bold text-3xl leading-tight mb-4">How big is the ActivityPub network?</h2>
-        <p class="font-serif text-xl">Because it’s decentralised, we don’t have an exact total. Based on data we have about the largest ActivityPub platforms, particularly Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding tens-of-millions more to that total.</p>
+        <h2 class="font-bold text-3xl leading-tight mb-2">Are you working together with other platforms on this?</h2>
+        <p class="font-serif text-xl mb-20">Yes! Our friends at Buttondown are building ActivityPub support right now too, so we’re collaborating with them to make sure our products play nicely together. If any other companies want to work together, drop us an email on activitypub@ghost.org. If Google, Apple and Samsung can collaborate on Matter to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
 
-        <h2 class="font-bold text-3xl leading-tight mb-4">This sounds great! How do I get it?</h2>
+        <h2 class="font-bold text-3xl leading-tight mb-2">How big is the ActivityPub network?</h2>
+        <p class="font-serif text-xl mb-20">Because it’s decentralised, we don’t have an exact total. Based on data we have about the largest ActivityPub platforms, particularly Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding tens-of-millions more to that total.</p>
+
+        <h2 class="font-bold text-3xl leading-tight mb-2">This sounds great! How do I get it?</h2>
         <p class="font-serif text-xl">Sign up below for early access to ActivityPub support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.
-If you’re currently using a different publishing platform and you’re curious about trying out Ghost and enjoying 0% payment fees, check out our guide here.</p>
+        <p class="font-serif text-xl mb-20">If you’re currently using a different publishing platform and you’re curious about trying out Ghost and enjoying 0% payment fees, check out our guide here.</p>
+
+        <!-- TODO: add form -->
     </div>
 </div>
 
