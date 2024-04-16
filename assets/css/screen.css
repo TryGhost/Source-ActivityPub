@@ -139,7 +139,7 @@ production stylesheet in assets/built/screen.css
     margin: 0;
 }
 
-html {
+html:not(.landing) {
     font-size: 62.5%;
 }
 

@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+{{#is "home"}}
+    <html class="landing" lang="{{@site.locale}}">
+{{else}}
+    <html lang="{{@site.locale}}"></html>
+{{/is}}
 <head>
 
     {{!-- Basic meta - advanced meta is output with {{ghost_head}} below --}}
@@ -35,7 +39,7 @@
         var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
         var textColor = (yiq >= 128) ? 'dark' : 'light';
 
-        document.documentElement.className = `has-${textColor}-text`;
+        document.documentElement.classList.add = `has-${textColor}-text`;
     </script>
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,9 +31,12 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -43,10 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -118,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -128,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -188,11 +201,17 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
   /* 1 */
   line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
   /* 1 */
   color: inherit;
   /* 1 */
@@ -217,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -339,6 +358,14 @@ menu {
 }
 
 /*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -433,6 +460,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -464,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -480,6 +514,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -511,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .relative {
@@ -528,33 +569,33 @@ video {
 }
 
 .my-7 {
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .my-8 {
-  margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-10 {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
 }
 
 .mb-4 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .mb-6 {
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
 .mt-48 {
@@ -643,11 +684,19 @@ video {
 }
 
 .gap-16 {
-  gap: 6.4rem;
+  gap: 4rem;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
 }
 
 .rounded-\[6px\] {
@@ -660,6 +709,10 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-amber-900\/15 {
+  border-color: rgb(120 53 15 / 0.15);
 }
 
 .bg-amber-50 {
@@ -689,23 +742,23 @@ video {
 }
 
 .text-3xl {
-  font-size: 3rem;
-  line-height: 3.6rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-5xl {
-  font-size: 4.8rem;
-  line-height: 1.6;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl {
-  font-size: 6rem;
-  line-height: 1.6;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-8xl {
-  font-size: 9.6rem;
-  line-height: 1.6;
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .text-\[20px\] {
@@ -717,8 +770,8 @@ video {
 }
 
 .text-xl {
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -768,16 +821,20 @@ video {
   opacity: 0.4;
 }
 
+.\*\:mb-5 > * {
+  margin-bottom: 1.25rem;
+}
+
 .first-letter\:float-left::first-letter {
   float: left;
 }
 
 .first-letter\:pr-4::first-letter {
-  padding-right: 1.6rem;
+  padding-right: 1rem;
 }
 
 .first-letter\:font-sans::first-letter {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .first-letter\:text-\[94px\]::first-letter {
