@@ -4,11 +4,11 @@
     <div class="max-w-5xl my-[16vmin] mx-auto px-4 sm:px-6 text-center text-balance flex items-center flex-col">
         <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[130px] h-[130px] mb-16" />
         <h1 class="font-bold text-8xl leading-none mb-7">It’s time to bring back the open web.</h1>
-        <p class="text-4xl leading-snug">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
+        <p class="text-4xl leading-snug mb-14">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
+        {{> "email-subscription"}}
     </div>
-    <!-- TODO: form -->
     <div class="font-serif bg-stone-950 text-white text-xl px-4 sm:px-6">
-        <div class="max-w-7xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
+        <div class="max-w-8xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
             <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans-serif first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
             <p>Then the social networks came. They removed the complexity of running a server. They added simple social interactions. Follow. Like. Reply. Everything got easier.</p>
             <p>But convenience came at a cost, and slowly  the way we consume information became less like home cooking and more like McDonalds.</p>
@@ -112,7 +112,7 @@
     </div>
 
     <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6">
-        <div class="flex items-center mb-10 gap-8">
+        <div class="flex flex-col items-center mb-10 gap-8">
             <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-[144px] h-auto" />
             <h2 class="font-bold text-[40px] leading-tight">A universal way for people to subscribe to your work.</h2>
         </div>
@@ -133,34 +133,34 @@
         <div class="grid grid-cols-12 gap-[8vmin]">
             <div class="col-span-12 md:col-span-8 md:col-start-0">
                 <h2 class="font-bold text-[40px] leading-tight mb-10">So how’s all this going to work?</h2>
-                <div class="font-serif text-3xl *:text-pretty *:mb-6 leading-normal">
+                <div class="font-serif text-3xl *:text-pretty *:mb-6 leading-normal mb-12">
                     <p>We’re not sure yet! Networks tend to work best when they’re shaped by the people who use them. So, rather than going away and working on this quietly behind closed doors, we’re announcing this as we build it out in the open.</p>
                     <p>What you’re looking at here is our first step: Sharing some initial ideas, and asking for your feedback. Subscribe below to follow along with the build diary, contribute your ideas, and get early access to test ActivityPub in Ghost.</p>
                 </div>
-                <!-- TODO: add form -->
+                {{> "email-subscription"}}
             </div>
         </div>
     </div>
 
     <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6 pt-24 border-t border-t-stone-800/20">
         <div class="grid grid-cols-12 gap-[8vmin]">
-            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
-                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">Our dream for the fediverse is a world in which you don't have to make a screenshot to share something from one network into another network. The fediverse is all one big network. It's all connected.</p>
-                <footer class="flex flex-col">
+            <blockquote class="flex flex-col col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8">Our dream for the fediverse is a world in which you don't have to make a screenshot to share something from one network into another network. The fediverse is all one big network. It's all connected.</p>
+                <footer class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-stone-800/30 before:block before:mb-8">
                     <span>Evan Prodromou</span>
                     <span class="opacity-40">Co-Author of ActivityPub</span>
                 </footer>
             </blockquote>
-            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
-                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">The whole point of ActivityPub as an open protocol is to turn Twitter/Instagram-like social networking into something more akin to email: truly open.</p>
-                <footer class="flex flex-col">
+            <blockquote class="flex flex-col col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8">The whole point of ActivityPub as an open protocol is to turn Twitter/Instagram-like social networking into something more akin to email: truly open.</p>
+                <footer class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-stone-800/30 before:block before:mb-8">
                     <span>John Gruber</span>
                     <span class="opacity-40">Daring Fireball</span>
                 </footer>
             </blockquote>
-            <blockquote class="col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
-                <p class="mb-8 after:content-[''] after:w-20 after:border-b after:border-b-stone-800/30 after:block after:pt-8">The core idea that social networks could be more like email — in which different platforms flow into the same two-way feed for consumers, perhaps with all their rich formatting — is gathering momentum.</p>
-                <footer class="flex flex-col">
+            <blockquote class="flex flex-col col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
+                <p class="mb-8">The core idea that social networks could be more like email — in which different platforms flow into the same two-way feed for consumers, perhaps with all their rich formatting — is gathering momentum.</p>
+                <footer class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-stone-800/30 before:block before:mb-8">
                     <span>Ben Smith</span>
                     <span class="opacity-40">Founder of Semafor</span>
                 </footer>
@@ -169,25 +169,36 @@
     </div>
 </div>
 
-<div class="bg-black text-white py-32">
-    <div class="max-w-3xl my-0 mx-auto">
+<div class="bg-stone-950 text-white py-32">
+    <div class="max-w-3xl my-0 mx-auto flex flex-col items-center">
         <h2 class="text-8xl mb-20 font-bold text-center">FAQ</h2>
 
-        <h2 class="font-bold text-3xl leading-tight mb-2">Isn’t ActivityPub a microblogging thing?</h2>
-        <p class="font-serif text-xl mb-20">No! ActivityPub is a protocol, like email. You can use it for whatever you like. Mastodon and Threads are built around short-form content, Pixelfed is built around images, Peertube is built around video. Ghost is going to be flexible, but generally built around long-form content.</p>
+        <div class="mb-24">
+            <h3 class="font-bold text-3xl leading-tight mb-2">Isn’t ActivityPub a microblogging thing?</h3>
+            <p class="font-serif text-xl mb-20">No! ActivityPub is a protocol, like email. You can use it for whatever you like. Mastodon and Threads are built around short-form content, Pixelfed is built around images, Peertube is built around video. Ghost is going to be flexible, but generally built around long-form content.</p>
 
-        <h2 class="font-bold text-3xl leading-tight mb-2">Are you working together with other platforms on this?</h2>
-        <p class="font-serif text-xl mb-20">Yes! Our friends at Buttondown are building ActivityPub support right now too, so we’re collaborating with them to make sure our products play nicely together. If any other companies want to work together, drop us an email on activitypub@ghost.org. If Google, Apple and Samsung can collaborate on Matter to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
+            <h3 class="font-bold text-3xl leading-tight mb-2">Are you working together with other platforms on this?</h3>
+            <p class="font-serif text-xl mb-20">Yes! Our friends at Buttondown are building ActivityPub support right now too, so we’re collaborating with them to make sure our products play nicely together. If any other companies want to work together, drop us an email on activitypub@ghost.org. If Google, Apple and Samsung can collaborate on Matter to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
 
-        <h2 class="font-bold text-3xl leading-tight mb-2">How big is the ActivityPub network?</h2>
-        <p class="font-serif text-xl mb-20">Because it’s decentralised, we don’t have an exact total. Based on data we have about the largest ActivityPub platforms, particularly Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding tens-of-millions more to that total.</p>
+            <h3 class="font-bold text-3xl leading-tight mb-2">How big is the ActivityPub network?</h3>
+            <p class="font-serif text-xl mb-20">Because it’s decentralised, we don’t have an exact total. Based on data we have about the largest ActivityPub platforms, particularly Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding tens-of-millions more to that total.</p>
 
-        <h2 class="font-bold text-3xl leading-tight mb-2">This sounds great! How do I get it?</h2>
-        <p class="font-serif text-xl">Sign up below for early access to ActivityPub support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.
-        <p class="font-serif text-xl mb-20">If you’re currently using a different publishing platform and you’re curious about trying out Ghost and enjoying 0% payment fees, check out our guide here.</p>
+            <h3 class="font-bold text-3xl leading-tight mb-2">This sounds great! How do I get it?</h3>
+            <p class="font-serif text-xl">Sign up below for early access to ActivityPub support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.</p>
+            <p class="font-serif text-xl mb-20">If you’re currently using a different publishing platform and you’re curious about trying out Ghost and enjoying 0% payment fees, check out our guide here.</p>
+        </div>
 
-        <!-- TODO: add form -->
+        {{> "email-subscription"}}
     </div>
+
+    <footer class="max-w-7xl mx-auto mt-40 text-xs flex justify-between px-4 sm:px-6 font-mono">
+        <div class="flex flex-col gap-1">
+            <span>Copyright © 2013–2024 Ghost Foundation Ltd</span>
+            <span class="opacity-50">Decentralised. Non-profit. Open source.</span>
+        </div>
+        <div class="flex flex-col text-right gap-1">
+            <span>이 웹사이트는 맛있는 쿠키를 사용합니다</span>
+            <span class="opacity-50">AB42-00000004-VNEK</span>
+        </div>
+    </footer>
 </div>
-
-
