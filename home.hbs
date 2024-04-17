@@ -1,47 +1,60 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
-<div class="bg-black text-white">
+<div class="bg-stone-950 text-white">
     <div class="max-w-5xl my-[16vmin] mx-auto px-4 sm:px-6 text-center text-balance flex items-center flex-col">
         <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[130px] h-[130px] mb-16" />
         <h1 class="font-bold text-8xl leading-none mb-7">It’s time to bring back the open web.</h1>
         <p class="text-4xl leading-snug">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
     </div>
     <!-- TODO: form -->
-    <div class="font-serif bg-black text-white text-xl px-4 sm:px-6">
+    <div class="font-serif bg-stone-950 text-white text-xl px-4 sm:px-6">
         <div class="max-w-7xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
-            <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
+            <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans-serif first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
             <p>Then the social networks came. They removed the complexity of running a server. They added simple social interactions. Follow. Like. Reply. Everything got easier.</p>
             <p>But convenience came at a cost, and slowly  the way we consume information became less like home cooking and more like McDonalds.</p>
             <p>This fast food algorithm diet was deliberately designed by technology companies to profit from our addictions. And after two decades of indulgence, the cracks in our collective consciousness are all around us.</p>
             <p>The time has come to take back control, and there are good reasons to be optimistic.</p>
             <p>For the past few years the choice has been difficult. Either participate in a closed networks a the mercy of algorithms, or set up an independent website at the expense of your growth. Now, though, that entire dynamic is getting flipped upside down.</p>
             <p>Email gave us private messaging technology that isn’t owned by a single company. No algorithms, no lock-in, no bullshit.</p>
-            <p>Now, ActivityPub is doing the same for social technology. It’s a protocol that allows people across different platforms and websites to follow, like and reply to one another. No algorithms, no lock-in.... no bullshit.</p>
+            <p>Now, ActivityPub is doing the same for social technology. It’s a protocol that allows people across different platforms and websites to follow, like and reply to one another. No algorithms, no lock-in... no bullshit.</p>
             <p>The open web is coming back, and with it returns diversity. You can both publish independently and grow faster than ever before with followers from all over the world, across all sorts of different platforms.</p>
         </div>
     </div>
     <div class="text-xl px-4 sm:px-6">
-        <div class="max-w-7xl my-24 mx-auto font-serif grid grid-cols-12 gap-[8vmin]">
-            <div class="col-span-4 *:mb-8 *:text-pretty">
+        <div class="max-w-7xl my-32 mx-auto grid grid-cols-12 gap-[8vmin]">
+            <div class="col-span-6 md:col-span-4 *:mb-8 *:text-pretty font-serif">
                 <p>Closed social networks compete with each other for users, so your reach is limited to people on the same platform.</p>
                 <p>The open web collaborates for users, so you get access to every person across every platform. There are over 5.5 billion people using the internet in 2024, and email — the web’s original open protocol — is still larger than any platform that has been invented before or since.</p>
                 <p>ActivityPub is headed in the same direction, because open protocols don’t depend on any one company succeeding. They just keep growing as more companies adopt them.</p>
             </div>
-            <div class="col-span-8">
-                <h2>Platforms by number of users</h2>
-                <!-- TODO: charts -->
+            <div class="col-span-6 md:col-span-8 font-sans-serif -mt-14">
+                <h2 class="text-3xl font-bold mb-6">Platforms by number of users</h2>
+                <div class="*:mb-5">
+                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-full bg-amber-50 text-black px-5"><span>Email</span><span>4.4b</span></div>
+                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[68%] bg-[#3B5998] text-white px-5"><span>Facebook</span><span>3b</span></div>
+                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[45%] bg-gradient-to-r from-[#933AB4] to-[#FCAF45] text-white px-4"><span>Instagram</span><span>2b</span></div>
+                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[22%] bg-[#EE1D52] text-white px-5"><span>TikTok</span><span>1b</span></div>
+                    <div class="flex items-center font-bold  text-xl leading-none text-white">
+                        <div class="flex justify-between items-center h-14 rounded-r-full w-[7%] bg-[#1E1E1E] px-5"><span>X</span></div><span class="ml-5">0.3b</span>
+                    </div>
+                    <div class="flex items-center font-bold  text-xl leading-none text-white">
+                        <div class="flex justify-between items-center h-14 rounded-r-full w-[2px] bg-[#FF6719] px-0.5"></div><span class="ml-5">Substack</span><span class="ml-5">0.0b</span>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </div>
     <div class="px-4 sm:px-6 mb-24">
-        <blockquote class="max-w-6xl mx-auto my-0 text-center" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
+        <blockquote class="max-w-4xl mx-auto my-0 text-center" cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
             <p class="text-white text-6xl font-bold leading-none mb-12 text-balance">“The fundamental shift, from platforms to protocols, appears to have momentum in a way it never has before.”</p>
             <footer class="font-medium text-3xl text-teal-300">David Pierce // <cite class="not-italic">The Verge -></cite></footer>
         </blockquote>
     </div>
 </div>
 
-<div class="bg-amber-50">
+<div class="bg-amber-50 text-stone-950">
     <div class="mt-32 max-w-7xl mx-auto grid grid-cols-12 gap-[8vmin]">
         <div class="col-span-12 md:col-span-4 md:col-start-5">
             <h2 class="font-bold text-3xl leading-tight mb-3">So, what are we going to do with all this <span class="text-rose-500 italic">momentum</span>?</h2>
@@ -81,7 +94,7 @@
                 <div class="col-span-8 justify-self-end">
                     <div class="w-screen h-auto mt-12 flex justify-end">
                         <div class="max-w-7xl overflow-hidden shadow-juicy border-amber-900/15 border rounded-[6px]">
-                            <img src="{{asset '/images/ghost-activity-pub-02.png'}}" alt="Ghost ActivityPub" />
+                            <img src="{{asset '/images/ghost-activity-pub-02.png'}}" alt="Ghost ActivityPub" class="-mt-px" />
                         </div>
                     </div>
                 </div>
