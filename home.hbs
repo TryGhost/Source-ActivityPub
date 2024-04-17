@@ -1,15 +1,21 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
-<div class="bg-stone-950 text-white">
-    <div class="max-w-5xl my-[16vmin] mx-auto px-4 sm:px-6 text-center text-balance flex items-center flex-col">
-        <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[130px] h-[130px] mb-16" />
-        <h1 class="font-bold text-8xl leading-none mb-7">It’s time to bring back the open web.</h1>
-        <p class="text-4xl leading-snug mb-14">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
+<div class="bg-stone-950 text-white relative">
+    <div class="max-w-5xl my-[16vmin] mx-auto px-4 sm:px-6 text-center text-balance flex items-center flex-col relative z-30 bg-gradient-radial from-black to-transparent from-0% to-60%">
+        <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[100px] sm:w-[130px] h-auto mb-10 sm:mb-16" />
+        <h1 class="font-bold text-5xl sm:text-8xl leading-none mb-7">It’s time to bring back the open web.</h1>
+        <p class="text-2xl sm:text-4xl leading-snug mb-14">Ghost is federating over ActivityPub to become part of the world’s largest publishing network.</p>
         {{> "email-subscription"}}
     </div>
+    <video playsinline autoplay muted loop class="object-cover absolute z-0 top-0 bottom-0 left-0 right-0 w-full h-full">
+        <source src="{{asset '/images/board.mp4'}}" type="video/mp4">
+    </video>
+    <div class="w-full h-48 absolute bottom-0 bg-gradient-to-t from-stone-950 to-stone-950/0 z-20"></div>
+</div>
+<div class="bg-stone-950 text-white pt-24">
     <div class="font-serif bg-stone-950 text-white text-xl px-4 sm:px-6">
-        <div class="max-w-8xl my-0 mx-auto text-xl leading-normal columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
-            <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-[94px] first-letter:pr-4 first-letter:font-black first-letter:font-sans-serif first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
+        <div class="max-w-prose lg:max-w-8xl my-0 mx-auto text-xl leading-normal lg:columns-3 *:mb-8 gap-10 *:leading-snug *:text-pretty border-b pb-24 border-b-amber-50/30">
+            <p class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-6xl sm:first-letter:text-[84px] first-letter:pr-2 sm:first-letter:pr-3 first-letter:font-bold first-letter:font-sans-serif first-letter:text-rose-500">We had it pretty good for a while, back there. The early days of the web were chaotic, free, and open. Everyone published unique content their own domain. No two sites looked the same. We interacted with one another to share ideas.</p>
             <p>Then the social networks came. They removed the complexity of running a server. They added simple social interactions. Follow. Like. Reply. Everything got easier.</p>
             <p>But convenience came at a cost, and slowly  the way we consume information became less like home cooking and more like McDonalds.</p>
             <p>This fast food algorithm diet was deliberately designed by technology companies to profit from our addictions. And after two decades of indulgence, the cracks in our collective consciousness are all around us.</p>
@@ -21,17 +27,18 @@
         </div>
     </div>
     <div class="text-xl px-4 sm:px-6">
-        <div class="max-w-7xl my-32 mx-auto grid grid-cols-12 gap-[8vmin]">
-            <div class="col-span-6 md:col-span-4 *:mb-8 *:text-pretty font-serif">
+        <div class="max-w-8xl my-32 mx-auto grid grid-cols-12 gap-[8vmin]">
+            <div class="col-span-12 sm:col-span-6 md:col-span-4 *:mb-8 *:text-pretty font-serif">
                 <p>Closed social networks compete with each other for users, so your reach is limited to people on the same platform.</p>
                 <p>The open web collaborates for users, so you get access to every person across every platform. There are over 5.5 billion people using the internet in 2024, and email — the web’s original open protocol — is still larger than any platform that has been invented before or since.</p>
                 <p>ActivityPub is headed in the same direction, because open protocols don’t depend on any one company succeeding. They just keep growing as more companies adopt them.</p>
             </div>
-            <div class="col-span-6 md:col-span-8 font-sans-serif -mt-14">
+            <div class="col-span-12 sm:col-span-6 md:col-span-8 font-sans-serif -mt-14">
                 <h2 class="text-3xl font-bold mb-6">Platforms by number of users</h2>
                 <div class="*:mb-5">
                     <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-full bg-amber-50 text-black px-5"><span>Email</span><span>4.4b</span></div>
                     <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[68%] bg-[#3B5998] text-white px-5"><span>Facebook</span><span>3b</span></div>
+                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[61%] bg-[#FF0000] text-white px-5"><span>Youtube</span><span>2.7b</span></div>
                     <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[45%] bg-gradient-to-r from-[#933AB4] to-[#FCAF45] text-white px-4"><span>Instagram</span><span>2b</span></div>
                     <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[22%] bg-[#EE1D52] text-white px-5"><span>TikTok</span><span>1b</span></div>
                     <div class="flex items-center font-bold  text-xl leading-none text-white">
@@ -55,7 +62,7 @@
 </div>
 
 <div class="bg-amber-50 text-stone-950">
-    <div class="mt-32 max-w-7xl mx-auto grid grid-cols-12 gap-[8vmin]">
+    <div class="mt-32 max-w-9xl mx-auto grid grid-cols-12 gap-[8vmin]">
         <div class="col-span-12 md:col-span-4 md:col-start-5">
             <h2 class="font-bold text-3xl leading-tight mb-3">So, what are we going to do with all this <span class="text-rose-500 italic">momentum</span>?</h2>
             <div class="font-serif text-xl *:mb-6 *:text-pretty">
@@ -67,7 +74,7 @@
     </div>
 
     <div class="relative overflow-hidden py-32 px-4 sm:px-6">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-8xl mx-auto">
             <div class="grid gap-[8vmin] grid-cols-12 items-center">
                 <div class="col-span-12 lg:col-span-4 mt-12">
                     <h2 class="font-bold text-3xl leading-tight mb-6">Follow whoever you like, wherever they are.</h2>
@@ -89,7 +96,7 @@
     </div>
 
     <div class="relative overflow-hidden py-32 px-4 sm:px-6">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-8xl mx-auto">
             <div class="grid gap-[8vmin] grid-cols-12 items-center">
                 <div class="col-span-8 justify-self-end">
                     <div class="w-screen h-auto mt-12 flex justify-end">
@@ -111,10 +118,10 @@
         </div>
     </div>
 
-    <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6">
+    <div class="max-w-8xl my-16 mx-auto px-4 sm:px-6">
         <div class="flex flex-col items-center mb-10 gap-8">
             <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-[144px] h-auto" />
-            <h2 class="font-bold text-[40px] leading-tight">A universal way for people to subscribe to your work.</h2>
+            <h2 class="font-bold text-[40px] leading-tight text-center">A universal way for people to subscribe to your work.</h2>
         </div>
             
         <img src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" class="shadow-juicy rounded-[6px] mb-20" />
@@ -129,7 +136,7 @@
         </div>
     </div>
 
-    <div class="max-w-7xl py-24 mx-auto px-4 sm:px-6">
+    <div class="max-w-8xl py-24 mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-12 gap-[8vmin]">
             <div class="col-span-12 md:col-span-8 md:col-start-0">
                 <h2 class="font-bold text-[40px] leading-tight mb-10">So how’s all this going to work?</h2>
@@ -142,7 +149,7 @@
         </div>
     </div>
 
-    <div class="max-w-7xl my-16 mx-auto px-4 sm:px-6 pt-24 border-t border-t-stone-800/20">
+    <div class="max-w-8xl my-16 mx-auto px-4 sm:px-6 pt-24 border-t border-t-stone-800/20">
         <div class="grid grid-cols-12 gap-[8vmin]">
             <blockquote class="flex flex-col col-span-4 text-xl leading-snug font-serif before:content-['_“'] relative before:absolute before:text-8xl before:font-serif before:top-[-50px] before:left-0">
                 <p class="mb-8">Our dream for the fediverse is a world in which you don't have to make a screenshot to share something from one network into another network. The fediverse is all one big network. It's all connected.</p>
@@ -191,7 +198,7 @@
         {{> "email-subscription"}}
     </div>
 
-    <footer class="max-w-7xl mx-auto mt-40 text-xs flex justify-between px-4 sm:px-6 font-mono">
+    <footer class="max-w-8xl mx-auto mt-40 text-xs flex justify-between px-4 sm:px-6 font-mono">
         <div class="flex flex-col gap-1">
             <span>Copyright © 2013–2024 Ghost Foundation Ltd</span>
             <span class="opacity-50">Decentralised. Non-profit. Open source.</span>
