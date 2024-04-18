@@ -17,7 +17,7 @@ module.exports = {
       },
       fontFamily: {
         'sans-serif': ['"Inter Display"', 'ui-sans-serif', 'system-ui', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
-        'serif': ['"Ivar Text"']
+        'serif': ['"Ivar Text"', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif']
       }
     },
   },

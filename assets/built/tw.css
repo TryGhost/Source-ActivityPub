@@ -602,10 +602,6 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -1317,11 +1313,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1360,7 +1351,7 @@ video {
 }
 
 .font-serif {
-  font-family: "Ivar Text";
+  font-family: "Ivar Text", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .\!text-base {
@@ -1376,11 +1367,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1589,7 +1575,7 @@ video {
 
 .before\:font-serif::before {
   content: var(--tw-content);
-  font-family: "Ivar Text";
+  font-family: "Ivar Text", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .before\:text-8xl::before {
@@ -1737,14 +1723,14 @@ video {
          columns: 3;
   }
 
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pb-28 {
