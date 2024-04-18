@@ -631,6 +631,11 @@ video {
   margin-bottom: 16vmin;
 }
 
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .-mt-14 {
   margin-top: -3.5rem;
 }
@@ -1702,6 +1707,16 @@ video {
     grid-column-start: 4;
   }
 
+  .lg\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .lg\:my-28 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1750,6 +1765,10 @@ video {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:leading-snug {
+    line-height: 1.375;
   }
 }
 
