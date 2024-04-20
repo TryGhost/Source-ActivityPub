@@ -3490,3 +3490,27 @@ figcaption a {
 .pswp--minimal--dark .pswp__top-bar {
     background: none;
 }
+
+.hoverswoosh {
+  display: inline-block;
+  position: relative;
+  color: #F43F5E;
+}
+
+.hoverswoosh::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #F43F5E;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hoverswoosh:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
