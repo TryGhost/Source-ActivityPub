@@ -3,14 +3,17 @@
 
 <div class="bg-stone-950 text-white relative h-[95vh] flex items-center">
     <div class="max-w-3xl mx-auto my-44 px-4 sm:px-6 text-center flex items-center flex-col relative z-30 bg-gradient-radial from-black to-transparent from-0% to-60%">
-        <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[100px] sm:w-[130px] h-auto mb-6 sm:mb-10" />
+        {{!-- <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[100px] sm:w-[130px] h-auto mb-6 sm:mb-10" /> --}}
+        <div class="flex justify-center items-center h-[200px] w-[200px] relative">
+            <video id="logoVideo" autoplay loop muted preload="auto" playsinline class="pointer-events-none absolute w-[400px] h-[400px] max-w-[400px]"></video>
+        </div>
         <h1 class="font-bold text-4xl md:text-7xl leading-none mb-4 text-balance">It’s time to bring back the open web.</h1>
         <p class="text-xl sm:text-2xl md:text-3xl leading-snug md:leading-snug mb-14">Ghost is federating over ActivityPub to become part of&nbsp;the world’s largest publishing network.</p>
         <div class="w-full max-w-xl">
             {{> "email-subscription"}}
         </div>
     </div>
-    
+
     <div class="absolute z-0 top-0 left-0 w-screen h-[95vh] overflow-hidden blur-[1px]">
         <iframe
             src="https://customer-cubrih08bflu3z2b.cloudflarestream.com/b3abacb4a39def519cbc91dcd505d472/iframe?muted=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-cubrih08bflu3z2b.cloudflarestream.com%2F4e6da618ec9a76162642a982287ba2af%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false&primaryColor=%23000000"
@@ -63,7 +66,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
@@ -214,7 +217,7 @@
             <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-28 lg:w-36 h-auto" />
             <h2 class="font-bold text-2xl lg:text-4xl text-balance leading-tight text-center">A universal way for people to subscribe to your work.</h2>
         </div>
-            
+
         <img src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" class="shadow-ok rounded-[6px] mb-8 lg:mb-20" />
         <div class="lg:columns-3 font-serif font-medium text-xl *:text-pretty *:mb-6 gap-[40px] leading-snug border-b pb-24 border-b-beige/30">
             <p>ActivityPub is a lot like email, and Ghost already supports email subscriptions. This means we can use the same interface to support both. Your audience enters whatever address they’re used to subscribing to things with, and Ghost figures out the rest.</p>

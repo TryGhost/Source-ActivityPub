@@ -10,7 +10,7 @@
     <title>{{meta_title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     {{!-- Preload main styles and scripts for better performance --}}
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
     <link rel="preload" as="script" href="{{asset "built/source.js"}}">
@@ -20,7 +20,7 @@
     {{#is "home"}}
         <link rel="stylesheet" type="text/css" href="{{asset "built/tw.css"}}">
     {{/is}}
-    
+
     {{!-- Custom background color --}}
     <style>
         :root {
@@ -49,13 +49,13 @@
 <body class="{{body_class}} has-{{#match @custom.title_font "Elegant serif"}}serif{{else match @custom.title_font "Consistent mono"}}mono{{else}}sans{{/match}}-title has-{{#match @custom.body_font "Elegant serif"}}serif{{else}}sans{{/match}}-body">
 
 <div class="gh-viewport">
-    
+
     {{^is "home"}}
     {{> "components/navigation" navigationLayout=@custom.navigation_layout}}
     {{/is}}
 
     {{{body}}}
-    
+
     {{^is "home"}}
         {{> "components/footer"}}
     {{/is}}
@@ -67,6 +67,16 @@
 
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
+
+{{#is "home"}}
+<script>
+window.onload = function() {
+    var video = document.getElementById('logoVideo');
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    video.src = isSafari ? '/assets/video/ghost-logo.mov' : '/assets/video/ghost-logo.webm';
+};
+</script>
+{{/is}}
 
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
