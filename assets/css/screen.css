@@ -3601,3 +3601,20 @@ figcaption a {
     transform: translate(0%, -100%);
   }
 }
+
+.ptcl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ptcl canvas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 650px;
+    width: 100%;
+}
