@@ -1097,6 +1097,14 @@ video {
   height: 300px;
 }
 
+.\!h-12 {
+  height: 3rem !important;
+}
+
+.\!h-10 {
+  height: 2.5rem !important;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -1592,6 +1600,11 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1875,6 +1888,12 @@ video {
   opacity: 1;
 }
 
+@media not all and (min-width: 768px) {
+  .max-md\:leading-tight {
+    line-height: 1.25;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
@@ -1882,6 +1901,14 @@ video {
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
+  .sm\:\!h-14 {
+    height: 3.5rem !important;
   }
 
   .sm\:w-\[130px\] {
@@ -1896,6 +1923,11 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .sm\:first-letter\:pr-3::first-letter {
