@@ -204,7 +204,12 @@
                 <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 lg:py-8">
                     <div class="lg:w-screen h-auto">
                         <div class="max-w-7xl overflow-hidden shadow-light rounded-[6px]">
-                            <img src="{{asset '/images/ghost-activity-pub-01.png'}}" alt="Ghost ActivityPub" />
+                            <picture>
+                                <source media="(max-width: 599px)" srcset="{{asset '/images/ghost-activity-pub-01-500.webp' }}" />
+                                <source media="(min-width: 600px) AND (max-width: 1099px)" srcset="{{asset '/images/ghost-activity-pub-01-1000.webp' }}" />
+                                <source media="(min-width: 1100px)" srcset="{{asset '/images/ghost-activity-pub-01.webp' }}" />
+                                <img src="{{asset '/images/ghost-activity-pub-01.webp' }}" alt="An example user interface showing an ActivityPub inbox feed in Ghost" />
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -219,7 +224,12 @@
                 <div class="col-span-12 lg:col-span-8 justify-self-end lg:py-8">
                     <div class="lg:w-screen h-auto flex justify-end">
                         <div class="max-w-7xl overflow-hidden shadow-light rounded-[6px]">
-                            <img src="{{asset '/images/ghost-activity-pub-02.png'}}" alt="Ghost ActivityPub" class="-mt-px" />
+                            <picture>
+                                <source class="-mt-px" media="(max-width: 599px)" srcset="{{asset '/images/ghost-activity-pub-02-500.webp' }}" />
+                                <source class="-mt-px" media="(min-width: 600px) AND (max-width: 1099px)" srcset="{{asset '/images/ghost-activity-pub-02-1000.webp' }}" />
+                                <source class="-mt-px" media="(min-width: 1100px)" srcset="{{asset '/images/ghost-activity-pub-02.webp' }}" />
+                                <img class="-mt-px" src="{{asset '/images/ghost-activity-pub-02.webp' }}" alt="An example user interface showing an ActivityPub article reader in Ghost" />
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -240,11 +250,17 @@
 
     <div class="max-w-8xl my-[6vmin] sm:my-16 mx-auto px-4 sm:px-6">
         <div class="flex flex-col items-center mb-[4vmin] gap-[2vmin]">
-            <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-20 lg:w-32 h-auto" />
+            <img src="{{asset '/images/email-fediverse.webp'}}" alt="" class="grow-0 shrink-0 w-20 lg:w-32 h-auto" />
             <h2 class="font-bold text-2xl lg:text-4xl text-balance leading-tight text-center">A universal way for people to subscribe to your work.</h2>
         </div>
 
-        <img class="shadow-ok rounded-[6px] mb-8 lg:mb-20" src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" />
+        <picture>
+            <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" media="(max-width: 599px)" srcset="{{asset '/images/ghost-activity-pub-03-500.webp' }}" />
+            <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" media="(min-width: 600px) AND (max-width: 1099px)" srcset="{{asset '/images/ghost-activity-pub-03-1000.webp' }}" />
+            <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" media="(min-width: 1100px)" srcset="{{asset '/images/ghost-activity-pub-03.webp' }}" />
+            <img class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" src="{{asset '/images/ghost-activity-pub-03.webp' }}" alt="An example user interface showing a subscription input that supports both ActivityPub and email" />
+        </picture>
+
         <div class="lg:columns-3 font-serif font-medium text-lg sm:text-xl *:mb-6 gap-[40px] leading-snug border-b border-b-beige/30">
             <p>ActivityPub is a lot like email, and Ghost already supports email subscriptions. This means we can use the same interface to support both. Your audience enters whatever address they’re used to subscribing to things with, and Ghost figures out the rest.</p>
             <p>David Pierce of The Verge once said about ActivityPub usernames: “just make it look like email addresses, people!” — we agree.</p>
