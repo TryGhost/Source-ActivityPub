@@ -690,6 +690,11 @@ video {
   margin-right: -5rem;
 }
 
+.my-\[6vmin\] {
+  margin-top: 6vmin;
+  margin-bottom: 6vmin;
+}
+
 .-mt-14 {
   margin-top: -3.5rem;
 }
@@ -1467,6 +1472,11 @@ video {
   border-bottom-right-radius: 9999px;
 }
 
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1487,6 +1497,22 @@ video {
 .border-rose-500 {
   --tw-border-opacity: 1;
   border-color: rgb(244 63 94 / var(--tw-border-opacity));
+}
+
+.border-black\/10 {
+  border-color: rgb(0 0 0 / 0.1);
+}
+
+.border-black\/20 {
+  border-color: rgb(0 0 0 / 0.2);
+}
+
+.border-black\/30 {
+  border-color: rgb(0 0 0 / 0.3);
+}
+
+.border-black\/40 {
+  border-color: rgb(0 0 0 / 0.4);
 }
 
 .border-b-beige\/30 {
@@ -1649,6 +1675,26 @@ video {
   padding-bottom: 10rem;
 }
 
+.py-\[6vmin\] {
+  padding-top: 6vmin;
+  padding-bottom: 6vmin;
+}
+
+.py-\[8vvmin\] {
+  padding-top: 8vvmin;
+  padding-bottom: 8vvmin;
+}
+
+.py-\[8vmin\] {
+  padding-top: 8vmin;
+  padding-bottom: 8vmin;
+}
+
+.py-\[16vmin\] {
+  padding-top: 16vmin;
+  padding-bottom: 16vmin;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1683,6 +1729,14 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-\[4vmin\] {
+  padding-top: 4vmin;
+}
+
+.pb-\[8vmin\] {
+  padding-bottom: 8vmin;
 }
 
 .text-center {
@@ -1995,6 +2049,16 @@ video {
   border-bottom-color: rgb(41 37 36 / 0.3);
 }
 
+.before\:border-b-black\/30::before {
+  content: var(--tw-content);
+  border-bottom-color: rgb(0 0 0 / 0.3);
+}
+
+.before\:border-b-black\/40::before {
+  content: var(--tw-content);
+  border-bottom-color: rgb(0 0 0 / 0.4);
+}
+
 .before\:font-serif::before {
   content: var(--tw-content);
   font-family: "Ivar Text", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -2111,6 +2175,11 @@ video {
     order: 2;
   }
 
+  .sm\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2158,6 +2227,11 @@ video {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .sm\:text-2xl {
@@ -2223,6 +2297,10 @@ video {
     margin-top: -2.5rem;
   }
 
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2248,6 +2326,11 @@ video {
   .md\:py-60 {
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:text-3xl {
