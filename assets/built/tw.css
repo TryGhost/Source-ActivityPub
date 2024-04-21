@@ -1353,6 +1353,10 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1640,6 +1644,14 @@ video {
   padding-bottom: 3rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1915,6 +1927,16 @@ video {
   top: -50px;
 }
 
+.before\:top-\[-30px\]::before {
+  content: var(--tw-content);
+  top: -30px;
+}
+
+.before\:top-\[-35px\]::before {
+  content: var(--tw-content);
+  top: -35px;
+}
+
 .before\:mb-8::before {
   content: var(--tw-content);
   margin-bottom: 2rem;
@@ -1949,6 +1971,28 @@ video {
   content: var(--tw-content);
   font-size: 6rem;
   line-height: 1;
+}
+
+.before\:text-4xl::before {
+  content: var(--tw-content);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.before\:text-6xl::before {
+  content: var(--tw-content);
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.before\:font-normal::before {
+  content: var(--tw-content);
+  font-weight: 400;
+}
+
+.before\:font-light::before {
+  content: var(--tw-content);
+  font-weight: 300;
 }
 
 .before\:content-\[\'\'\]::before {
@@ -2014,6 +2058,10 @@ video {
 @media not all and (min-width: 640px) {
   .max-sm\:hidden {
     display: none;
+  }
+
+  .max-sm\:text-balance {
+    text-wrap: balance;
   }
 }
 
@@ -2206,6 +2254,12 @@ video {
   .md\:leading-tight {
     line-height: 1.25;
   }
+
+  .md\:before\:text-8xl::before {
+    content: var(--tw-content);
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2279,6 +2333,10 @@ video {
          columns: 3;
   }
 
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -2315,6 +2373,17 @@ video {
 
   .lg\:leading-snug {
     line-height: 1.375;
+  }
+
+  .lg\:before\:top-\[-50px\]::before {
+    content: var(--tw-content);
+    top: -50px;
+  }
+
+  .lg\:before\:text-8xl::before {
+    content: var(--tw-content);
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
