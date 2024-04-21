@@ -69,16 +69,6 @@
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
 
-{{#is "home"}}
-<script type="module">
-window.onload = function() {
-    var video = document.getElementById('logoVideo');
-    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    video.src = isSafari ? '/assets/video/ghost-logo.mov' : '/assets/video/ghost-logo.webm';
-};
-</script>
-{{/is}}
-
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
 

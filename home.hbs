@@ -388,6 +388,13 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="module">
+    $(document).ready(function () {
+        var video = document.getElementById('logoVideo');
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        video.src = isSafari ? '/assets/video/ghost-logo.mov' : '/assets/video/ghost-logo.webm';
+    });
+</script>
+<script type="module">
     (function () {
 
         var ParticleNetworkAnimation, PNA;
