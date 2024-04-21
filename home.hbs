@@ -239,12 +239,12 @@
     </div>
 
     <div class="max-w-8xl my-16 mx-auto px-4 sm:px-6">
-        <div class="flex flex-col items-center mb-10 gap-8">
-            <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-28 lg:w-36 h-auto" />
+        <div class="flex flex-col items-center mb-[4vmin] gap-[2vmin]">
+            <img src="{{asset '/images/email-fediverse.png'}}" alt="" class="grow-0 shrink-0 w-20 lg:w-32 h-auto" />
             <h2 class="font-bold text-2xl lg:text-4xl text-balance leading-tight text-center">A universal way for people to subscribe to your work.</h2>
         </div>
 
-        <img src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" class="shadow-ok rounded-[6px] mb-8 lg:mb-20" />
+        <img class="shadow-ok rounded-[6px] mb-8 lg:mb-20" src="{{asset '/images/ghost-activity-pub-03.png'}}" alt="Subscribing to 404Media using either ActivityPub or email address" />
         <div class="lg:columns-3 font-serif font-medium text-lg sm:text-xl *:mb-6 gap-[40px] leading-snug border-b pb-24 border-b-beige/30">
             <p>ActivityPub is a lot like email, and Ghost already supports email subscriptions. This means we can use the same interface to support both. Your audience enters whatever address they’re used to subscribing to things with, and Ghost figures out the rest.</p>
             <p>David Pierce of The Verge once said about ActivityPub usernames: “just make it look like email addresses, people!” — we agree.</p>
@@ -338,16 +338,17 @@
 
         <div class="mb-24 col-span-12 col-start-1 lg:col-span-6 lg:col-start-4 text-pretty">
             <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">Isn’t ActivityPub a microblogging thing?</h3>
-            <p class="font-serif font-medium text-lg sm:text-xl mb-20">No! <a class="underline hover:opacity-100" href="https://activitypub.rocks">ActivityPub</a> is a protocol, like email. You can use it for whatever you like. <a class="underline hover:opacity-100" href="https://joinmastodon.org">Mastodon</a> and <a class="underline hover:opacity-100" href="https://threads.net">Threads</a> are built around short-form content, <a class="underline hover:opacity-100" href="">Pixelfed</a> is built around images, <a class="underline hover:opacity-100" href="">Peertube</a> is built around video. <a class="underline hover:opacity-100" href="">Ghost</a> is going to be flexible, but generally focused on long-form content.</p>
+            <p class="font-serif font-medium text-lg sm:text-xl mb-20">No! <a class="underline hover:opacity-100" href="https://activitypub.rocks" target="_blank" rel="noopener">ActivityPub</a> is a protocol, like email. You can use it for whatever you like. <a class="underline hover:opacity-100" href="https://joinmastodon.org" target="_blank" rel="noopener">Mastodon</a> and <a class="underline hover:opacity-100" href="https://threads.net" target="_blank" rel="noopener">Threads</a> are built around short-form content, <a class="underline hover:opacity-100" href="https://pixelfed.org/" target="_blank" rel="noopener">Pixelfed</a> is built around images, <a class="underline hover:opacity-100" href="https://joinpeertube.org" target="_blank" rel="noopener">Peertube</a> is built around video. <a class="underline hover:opacity-100" href="https://ghost.org" target="_blank" rel="noopener">Ghost</a> is going to be flexible, but generally focused on long-form content.</p>
 
-            <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2 max-sm:text-balance">Are you working together with other platforms on this?</h3>
-            <p class="font-serif font-medium text-lg sm:text-xl mb-20">Yes! Our friends at Buttondown are building ActivityPub support right now too, so we’re collaborating with them to make sure our products play nicely together. If any other companies want to work together, drop us an email on <a class="underline hover:opacity-100" href="mailto:activitypub@ghost.org">activitypub@ghost.org</a>. If Google, Apple and Samsung can collaborate on Matter to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
+            <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2 max-sm:text-balance">Are you working together with anyone else on this?</h3>
+            <p class="font-serif font-medium text-lg sm:text-xl mb-5">Yes! Our friends at <a class="underline hover:opacity-100" href="https://buttondown.email/" target="_blank" rel="noopener">Buttondown</a> are building ActivityPub support right now too, and we've received kind offers of help from teams at Mastodon & the ActivityPub spec authors. If any other platforms want to work together, drop us an email on <a class="underline hover:opacity-100" href="mailto:activitypub@ghost.org">activitypub@ghost.org</a>.</p>
+            <p class="font-serif font-medium text-lg sm:text-xl mb-20">If Google, Apple, Samsung and Amazon are all able to collaborate on <a class="underline hover:opacity-100" href="https://csa-iot.org/all-solutions/matter/" target="_blank" rel="noopener">Matter</a> to make their products compatible with each other, there’s no reason publishing platforms can’t do the same.</p>
 
             <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">How big is the ActivityPub network?</h3>
             <p class="font-serif font-medium text-lg sm:text-xl mb-20">Because it’s decentralised, we don’t have an exact total. Based on data we have about the largest ActivityPub platforms, particularly Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding tens-of-millions more to that total.</p>
 
             <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">This sounds great! How do I get it?</h3>
-            <p class="font-serif font-medium text-lg sm:text-xl mb-6">Sign up below for early access to ActivityPub support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.</p>
+            <p class="font-serif font-medium text-lg sm:text-xl mb-5">Sign up below for early access to ActivityPub support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.</p>
             <p class="font-serif font-medium text-lg sm:text-xl">If you’re currently using a different publishing platform and you’re curious about trying out Ghost and enjoying 0% payment fees, check out our guide here.</p>
         </div>
 
