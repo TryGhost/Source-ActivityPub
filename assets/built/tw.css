@@ -1707,6 +1707,11 @@ video {
   padding-bottom: 16vmin;
 }
 
+.py-\[12vmin\] {
+  padding-top: 12vmin;
+  padding-bottom: 12vmin;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1749,6 +1754,10 @@ video {
 
 .pb-\[8vmin\] {
   padding-bottom: 8vmin;
+}
+
+.pt-44 {
+  padding-top: 11rem;
 }
 
 .text-center {
@@ -2069,6 +2078,11 @@ video {
 .before\:border-b-black\/40::before {
   content: var(--tw-content);
   border-bottom-color: rgb(0 0 0 / 0.4);
+}
+
+.before\:border-b-black\/20::before {
+  content: var(--tw-content);
+  border-bottom-color: rgb(0 0 0 / 0.2);
 }
 
 .before\:font-serif::before {
@@ -2479,6 +2493,11 @@ video {
     padding-bottom: 2rem;
   }
 
+  .lg\:py-\[20vmin\] {
+    padding-top: 20vmin;
+    padding-bottom: 20vmin;
+  }
+
   .lg\:pb-28 {
     padding-bottom: 7rem;
   }
@@ -2526,5 +2545,10 @@ video {
 
   .xl\:col-start-5 {
     grid-column-start: 5;
+  }
+
+  .xl\:py-\[20vmin\] {
+    padding-top: 20vmin;
+    padding-bottom: 20vmin;
   }
 }

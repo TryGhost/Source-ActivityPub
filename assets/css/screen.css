@@ -3618,3 +3618,15 @@ figcaption a {
     height: 650px;
     width: 100%;
 }
+
+.networkbg {
+    background: url('/assets/images/network.webp') no-repeat;
+    background-position: 50% calc(0% + 120px);
+    background-size: 1600px;
+}
+
+@media (max-width: 500px) {
+    .networkbg {
+        background-size: 1280px;
+    }
+}
