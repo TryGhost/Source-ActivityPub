@@ -901,6 +901,10 @@ video {
   margin-top: -2.5rem;
 }
 
+.mb-\[1px\] {
+  margin-bottom: 1px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1593,6 +1597,21 @@ video {
   padding-bottom: 15rem;
 }
 
+.py-\[20vmin\] {
+  padding-top: 20vmin;
+  padding-bottom: 20vmin;
+}
+
+.py-\[30vmin\] {
+  padding-top: 30vmin;
+  padding-bottom: 30vmin;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2080,6 +2099,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:first-letter\:pr-3::first-letter {
     padding-right: 0.75rem;
   }
@@ -2114,6 +2138,10 @@ video {
     margin-bottom: 3rem;
   }
 
+  .md\:-mt-10 {
+    margin-top: -2.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2136,6 +2164,11 @@ video {
     padding-bottom: 6rem;
   }
 
+  .md\:py-60 {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2154,6 +2187,16 @@ video {
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:leading-snug {
@@ -2262,6 +2305,11 @@ video {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
