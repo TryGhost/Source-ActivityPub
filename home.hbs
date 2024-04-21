@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="absolute z-0 top-0 left-0 w-screen h-[95vh] overflow-hidden blur-[1px]">
+    <div class="absolute z-0 top-0 left-0 w-screen h-[95vh] overflow-hidden">
         <iframe
             src="https://customer-cubrih08bflu3z2b.cloudflarestream.com/437afa4f6f1e62f6614f98d47a732503/iframe?muted=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-cubrih08bflu3z2b.cloudflarestream.com%2F437afa4f6f1e62f6614f98d47a732503%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false&primaryColor=%23000000"
             loading="lazy"
@@ -45,24 +45,49 @@
     </div>
     <div class="text-lg sm:text-xl px-4 sm:px-6">
         <div class="max-w-8xl mt-36 mx-auto grid grid-cols-12 gap-[8vmin]">
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 *:mb-8 font-serif font-medium">
+            <div class="order-2 md:order-1 col-span-12 md:col-span-6 lg:col-span-4 *:mb-8 font-serif font-medium">
                 <p>Closed social networks compete with each other for users, so your reach is limited to people on the same platform.</p>
                 <p>The open web collaborates for users, so you get access to every person across every platform. There are over 5.5 billion people using the internet in 2024, and email — the web’s original open protocol — is still larger than any platform that has been invented before or since.</p>
                 <p>ActivityPub is headed in the same direction, because open protocols don’t depend on any one company succeeding. They just keep growing as more companies adopt them.</p>
             </div>
-            <div class="col-span-12 md:col-span-6 lg:col-span-8 font-sans-serif -mt-14">
-                <h2 class="text-2xl md:text-3xl font-bold mb-6">Platforms by number of users</h2>
-                <div class="*:mb-5">
-                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-full bg-beige text-black px-5"><span>Email</span><span>4.4b</span></div>
-                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[68%] bg-[#3B5998] text-white px-5"><span>Facebook</span><span>3b</span></div>
-                    {{!-- <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[61%] bg-[#FF0000] text-white px-5"><span>Youtube</span><span>2.7b</span></div> --}}
-                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[45%] bg-gradient-to-r from-[#933AB4] to-[#FCAF45] text-white px-4"><span>Instagram</span><span class="font-sans-serif">2b</span></div>
-                    <div class="flex justify-between items-center text-xl leading-none h-14 font-bold rounded-r-full w-[22%] bg-[#EE1D52] text-white px-5"><span>TikTok</span><span>1b</span></div>
-                    <div class="flex items-center font-bold  text-xl leading-none text-white">
-                        <div class="flex justify-between items-center h-14 rounded-r-full w-[7%] bg-[#1E1E1E] px-5"><span>X</span></div><span class="ml-5">0.3b</span>
+            <div class="order-1 md:order-2 col-span-12 md:col-span-6 lg:col-span-8 font-sans-serif font-bold -mt-14">
+                <h2 class="text-2xl md:text-3xl mb-6">Platforms by number of users</h2>
+                <div class="*:mb-5 text-base sm:text-xl leading-none">
+                    <div class="flex justify-between items-center h-14 rounded-r-full w-full bg-beige text-black px-4">
+                        <div class="flex gap-2 items-center">
+                            <span class="shrink-0">{{> "icons/email" class="w-6 h-6" }}</span>
+                            <span>Email</span>
+                        </div>
+                        <span>4.4b</span>
                     </div>
-                    <div class="flex items-center font-bold  text-xl leading-none text-white">
-                        <div class="flex justify-between items-center h-14 rounded-r-full w-[2px] bg-[#FF6719] px-0.5"></div><span class="ml-5">Substack</span><span class="ml-5">0.0b</span>
+                    <div class="flex justify-between items-center h-14 rounded-r-full w-[68%] bg-[#3B5998] text-white px-4">
+                        <div class="flex gap-1 items-center">
+                            <span class="shrink-0">{{> "icons/fb" class="w-7 h-7" }}</span>
+                            <span class="max-sm:hidden">Facebook</span>
+                        </div>
+                        <span>3b</span>
+                    </div>                    
+                    <div class="flex justify-between items-center h-14 rounded-r-full w-[45%] bg-gradient-to-r from-[#933AB4] to-[#FCAF45] text-white px-4">
+                        <div class="flex gap-3 items-center">
+                            <span class="shrink-0">{{> "icons/ig" class="w-5 h-5" }}</span>
+                            <span class="hidden sm:inline md:hidden lg:inline">Instagram</span>
+                        </div>
+                        <span>2b</span>
+                    </div>
+                    <div class="flex justify-between gap-2 items-center h-14 rounded-r-full w-fit sm:w-[22%] md:w-fit lg:w-[22%] bg-[#EE1D52] text-white px-4">
+                        <div class="flex gap-2 items-center">
+                            <span class="shrink-0">{{> "icons/tktk" class="w-5 h-5" }}</span>
+                            <span class="max-xl:hidden">TikTok</span>
+                        </div>
+                        <span>1b</span>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <div class="flex justify-between items-center h-14 rounded-r-full w-auto lg:w-[7%] bg-[#1E1E1E] px-4"><span>𝕏</span></div><span class="ml-5">0.3b</span>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <div class="flex justify-between items-center h-14 rounded-r-full w-[2px] bg-[#FF6719] px-0.5"></div>
+                        <span class="ml-5">Substack</span>
+                        <span class="ml-5">0.0b</span>
                     </div>
                 </div>
             </div>
