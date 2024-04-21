@@ -5,7 +5,7 @@
     <div class="max-w-3xl mx-auto my-44 px-4 sm:px-6 text-center flex items-center flex-col relative z-30 bg-gradient-radial from-black to-transparent from-0% to-60%">
         {{!-- <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo" class="w-[100px] sm:w-[130px] h-auto mb-6 sm:mb-10" /> --}}
         <div class="flex justify-center items-center h-[200px] w-[200px] relative">
-            <video id="logoVideo" autoplay loop muted preload="auto" playsinline class="pointer-events-none absolute w-[200px] h-[200px] max-w-[200px] sm:w-[300px] sm:h-[300px] sm:max-w-[300px] -ml-5"></video>
+            <video role="presentation" id="logoVideo" autoplay loop muted preload="auto" playsinline class="pointer-events-none absolute w-[200px] h-[200px] max-w-[200px] sm:w-[300px] sm:h-[300px] sm:max-w-[300px] -ml-5"></video>
         </div>
         <h1 class="font-bold text-4xl md:text-7xl leading-none mb-4 text-balance">It’s time to bring back the open web.</h1>
         <p class="text-xl sm:text-2xl md:text-3xl max-md:leading-tight mb-14">Ghost is federating over ActivityPub to become part of&nbsp;the world’s largest publishing network.</p>
@@ -21,6 +21,7 @@
             style="box-sizing: border-box; height: 56.25vw; left: 50%; min-height: 100%; min-width: 100%; transform: translate(-50%, -50%); position: absolute; top: 50%; width: 177.77777778vh;"
             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
             allowfullscreen="true"
+            title="bg"
         ></iframe>
     </div>
     <div class="w-full h-2/3 absolute -bottom-1 bg-gradient-to-t from-stone-950 to-stone-950/0 z-20"></div>
@@ -386,7 +387,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
+<script type="module">
     (function () {
 
         var ParticleNetworkAnimation, PNA;
@@ -678,13 +679,13 @@
             return array[Math.floor(Math.random() * array.length)];
         };
 
-        pna = new ParticleNetworkAnimation(); pna.init($('.node-map')[0]);
+        PNA = new ParticleNetworkAnimation(); PNA.init($('.node-map')[0]);
 
     }());
 
 </script>
 
-<script>
+<script type="module">
     let max_particles = 800;
     let particles = [];
     let frequency = 200;

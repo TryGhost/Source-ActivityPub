@@ -70,7 +70,7 @@
 <script src="{{asset "built/source.js"}}"></script>
 
 {{#is "home"}}
-<script>
+<script type="module">
 window.onload = function() {
     var video = document.getElementById('logoVideo');
     var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
