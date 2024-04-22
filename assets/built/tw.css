@@ -880,14 +880,6 @@ video {
   margin-top: auto;
 }
 
-.-mb-4 {
-  margin-bottom: -1rem;
-}
-
-.-mb-6 {
-  margin-bottom: -1.5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -944,10 +936,6 @@ video {
   height: 1.5px;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .h-\[10px\] {
   height: 10px;
 }
@@ -962,6 +950,10 @@ video {
 
 .h-\[13px\] {
   height: 13px;
+}
+
+.h-\[140px\] {
+  height: 140px;
 }
 
 .h-\[14px\] {
@@ -1006,10 +998,6 @@ video {
 
 .h-\[23px\] {
   height: 23px;
-}
-
-.h-\[240px\] {
-  height: 240px;
 }
 
 .h-\[24px\] {
@@ -1084,10 +1072,6 @@ video {
   height: auto;
 }
 
-.h-\[140px\] {
-  height: 140px;
-}
-
 .w-20 {
   width: 5rem;
 }
@@ -1116,16 +1100,16 @@ video {
   width: 14%;
 }
 
+.w-\[140px\] {
+  width: 140px;
+}
+
 .w-\[18\%\] {
   width: 18%;
 }
 
 .w-\[24\%\] {
   width: 24%;
-}
-
-.w-\[240px\] {
-  width: 240px;
 }
 
 .w-\[2px\] {
@@ -1189,10 +1173,6 @@ video {
   width: 100vw;
 }
 
-.w-\[140px\] {
-  width: 140px;
-}
-
 .min-w-14 {
   min-width: 3.5rem;
 }
@@ -1217,20 +1197,12 @@ video {
   max-width: 90rem;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[140px\] {
+  max-width: 140px;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-
-.max-w-\[140px\] {
-  max-width: 140px;
 }
 
 .shrink-0 {
@@ -1511,7 +1483,7 @@ video {
 }
 
 .font-sans-serif {
-  font-family: "Inter Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", [object Object];
 }
 
 .font-serif {
@@ -1694,7 +1666,7 @@ video {
 }
 
 .first-letter\:font-sans-serif::first-letter {
-  font-family: "Inter Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter Display", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", [object Object];
 }
 
 .first-letter\:text-6xl::first-letter {
@@ -1852,10 +1824,6 @@ video {
     height: 11rem;
   }
 
-  .sm\:h-\[240px\] {
-    height: 240px;
-  }
-
   .sm\:h-\[200px\] {
     height: 200px;
   }
@@ -1870,10 +1838,6 @@ video {
 
   .sm\:w-\[240px\] {
     width: 240px;
-  }
-
-  .sm\:max-w-\[240px\] {
-    max-width: 240px;
   }
 
   .sm\:max-w-\[200px\] {
