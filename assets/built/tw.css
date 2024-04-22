@@ -1538,10 +1538,6 @@ video {
   font-weight: 500;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .not-italic {
   font-style: normal;
 }
