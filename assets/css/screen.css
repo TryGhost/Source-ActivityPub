@@ -382,6 +382,18 @@ a:hover {
     pointer-events: none;
 }
 
+.gh-form-success-message {
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+}
+
+.gh-form.success .gh-form-success-message {
+    display: inline;
+}
+
 .gh-form.error {
     box-shadow: 0 0 0 1px red;
 }
