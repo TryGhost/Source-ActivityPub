@@ -1197,12 +1197,12 @@ video {
   max-width: 140px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .shrink-0 {
@@ -1820,8 +1820,8 @@ video {
     height: 4rem;
   }
 
-  .sm\:h-44 {
-    height: 11rem;
+  .sm\:h-\[16vh\] {
+    height: 16vh;
   }
 
   .sm\:h-\[200px\] {
@@ -2013,12 +2013,12 @@ video {
     width: 7%;
   }
 
-  .lg\:w-screen {
-    width: 100vw;
-  }
-
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-screen {
+    width: 100vw;
   }
 
   .lg\:max-w-7xl {
