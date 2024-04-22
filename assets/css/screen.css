@@ -308,6 +308,7 @@ body {
     background-color: var(--background-color);
     color: var(--color-primary-text);
     font-feature-settings: 'cv11' on, 'tnum' on, 'ss03' on, 'ss01' on;
+    overflow-x: hidden;
 }
 
 a {
@@ -542,6 +543,7 @@ button.gh-form-input {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .gh-outer {
