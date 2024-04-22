@@ -31,6 +31,9 @@ module.exports = {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
+          {
+            fontFeatureSettings: '"cv11", "ss01", "ss03", "tnum"'
+          }
         ],
         serif: [
           '"Ivar Text"',
