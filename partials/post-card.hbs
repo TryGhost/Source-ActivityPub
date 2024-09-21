@@ -1,17 +1,17 @@
 <article class="gh-card {{post_class}}{{#unless @custom.show_images_in_feed}} no-image{{/unless}}">
     <a class="gh-card-link" href="{{url}}">
-        {{#if feature_image}}
+        {{#if twitter_image}}
             <figure class="gh-card-image">
                 <img
-                    srcset="{{img_url feature_image size="xs" format="webp"}} 160w,
-                            {{img_url feature_image size="s" format="webp"}} 320w,
-                            {{img_url feature_image size="m" format="webp"}} 600w,
-                            {{img_url feature_image size="l" format="webp"}} 960w,
-                            {{img_url feature_image size="xl" format="webp"}} 1200w,
-                            {{img_url feature_image size="xxl" format="webp"}} 2000w"
+                    srcset="{{img_url twitter_image size="xs" format="webp"}} 160w,
+                            {{img_url twitter_image size="s" format="webp"}} 320w,
+                            {{img_url twitter_image size="m" format="webp"}} 600w,
+                            {{img_url twitter_image size="l" format="webp"}} 960w,
+                            {{img_url twitter_image size="xl" format="webp"}} 1200w,
+                            {{img_url twitter_image size="xxl" format="webp"}} 2000w"
                     sizes="{{#if imageSizes}}{{imageSizes}}{{else}}320px{{/if}}"
-                    src="{{img_url feature_image size="m"}}"
-                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                    src="{{img_url twitter_image size="m"}}"
+                    alt="feature image"
                     {{#if lazyLoad}}loading="lazy"{{/if}}
                 >
             </figure>
