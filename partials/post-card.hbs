@@ -15,6 +15,21 @@
                     {{#if lazyLoad}}loading="lazy"{{/if}}
                 >
             </figure>
+        {{else if feature_image}}
+            <figure class="gh-card-image">
+                <img
+                    srcset="{{img_url feature_image size="xs" format="webp"}} 160w,
+                            {{img_url feature_image size="s" format="webp"}} 320w,
+                            {{img_url feature_image size="m" format="webp"}} 600w,
+                            {{img_url feature_image size="l" format="webp"}} 960w,
+                            {{img_url feature_image size="xl" format="webp"}} 1200w,
+                            {{img_url feature_image size="xxl" format="webp"}} 2000w"
+                    sizes="{{#if imageSizes}}{{imageSizes}}{{else}}320px{{/if}}"
+                    src="{{img_url feature_image size="m"}}"
+                    alt="feature image"
+                    {{#if lazyLoad}}loading="lazy"{{/if}}
+                >
+            </figure>
         {{/if}}
         <div class="gh-card-wrapper">
             {{#if primary_tag}}
