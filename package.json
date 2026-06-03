@@ -201,10 +201,5 @@
             }
         }
     },
-    "renovate": {
-        "extends": [
-            "@tryghost:theme"
-        ]
-    },
     "dependencies": {}
 }
