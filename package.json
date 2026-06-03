@@ -7,15 +7,18 @@
         "ghost": ">=5.0.0"
     },
     "license": "MIT",
+    "packageManager": "pnpm@11.5.1",
     "scripts": {
         "dev": "gulp",
-        "dev:all": "concurrently \"yarn dev\" \"yarn tailwind:dev\"",
+        "dev:all": "concurrently \"pnpm dev\" \"pnpm tailwind:dev\"",
+        "build": "gulp build && pnpm tailwind:build",
         "zip": "gulp zip",
         "test": "gscan .",
         "test:ci": "gscan --fatal --verbose .",
-        "pretest": "gulp build && yarn tailwind:build",
-        "preship": "yarn test",
-        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
+        "pretest": "pnpm build",
+        "pretest:ci": "pnpm build",
+        "preship": "pnpm test",
+        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then pnpm version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
         "postship": "git fetch && gulp release",
         "tailwind:build": "npx tailwindcss -i ./assets/css/tw.css -o ./assets/built/tw.css --minify",
         "tailwind:dev": "npx tailwindcss -i ./assets/css/tw.css -o ./assets/built/tw.css --watch"

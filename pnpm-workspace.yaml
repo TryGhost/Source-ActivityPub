@@ -1,0 +1,7 @@
+# These transitive deps ship optional native/lifecycle build scripts that this
+# theme's build (CSS/JS compile, zip, gscan) does not need. Skipping them keeps
+# `pnpm install` reproducible and avoids compiling native bindings in CI.
+allowBuilds:
+  dtrace-provider: false
+  es5-ext: false
+  fsevents: false
