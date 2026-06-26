@@ -18,9 +18,6 @@ module.exports = {
       maxWidth: {
         "8xl": "90rem",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      },
       fontFamily: {
         "sans-serif": [
           '"Inter Display"',
