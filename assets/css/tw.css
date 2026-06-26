@@ -1,3 +1,129 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+ * Tailwind CSS v4 entrypoint.
+ *
+ * Imported with preflight and utilities UNLAYERED (only the theme variables are
+ * layered). This theme ships a separate, hand-written `screen.css` that is not
+ * layered and includes global resets such as `*{margin:0}`. v4's default
+ * `@import "tailwindcss"` places utilities in a real `@layer`, and unlayered CSS
+ * always beats layered CSS regardless of specificity — so screen.css would
+ * override every Tailwind utility (margins, etc.). In v3 the utilities were
+ * unlayered and loaded after screen.css, winning by source order; these
+ * explicit imports restore that behaviour.
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css";
+@import "tailwindcss/utilities.css";
+@config "../../tailwind.config.js";
+
+/*
+ * v4 → v3 compatibility. v4 changed defaults that would otherwise alter this
+ * theme; the blocks below pin them back so the output stays visually identical.
+ */
+
+@theme {
+    /* v4 ships an OKLCH palette and new font-size/line-height pairings. Pin the
+       values this theme uses to their v3 definitions (byte-identical on P3). */
+    --color-gray-200: #e5e7eb;
+    --color-gray-400: #9ca3af;
+    --color-stone-950: #0c0a09;
+    --color-rose-500: #f43f5e;
+    --color-teal-300: #5eead4;
+
+    --text-xs: 0.75rem;
+    --text-xs--line-height: 1rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: 1.25rem;
+    --text-base: 1rem;
+    --text-base--line-height: 1.5rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.75rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: 1.75rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: 2rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: 2.25rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: 2.5rem;
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+}
+
+/* v3 defaulted un-coloured borders to gray-200 and placeholders to gray-400
+   (v4 uses currentColor), and set a pointer cursor on buttons. Unlayered, after
+   preflight, so they apply like v3's preflight did. */
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-gray-400);
+}
+
+button:not(:disabled),
+[role="button"]:not(:disabled) {
+    cursor: pointer;
+}
+
+/*
+ * v4 bakes the colour-interpolation method (`in oklab`) into every gradient and
+ * the custom radial utility loses its colour stops. Re-define the three
+ * gradient utilities this theme uses to interpolate in sRGB (the v3 default)
+ * and to render the radial vignette again.
+ */
+@utility bg-gradient-to-r {
+    --tw-gradient-position: to right;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+}
+
+@utility bg-gradient-to-t {
+    --tw-gradient-position: to top;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+}
+
+@utility bg-gradient-radial {
+    background-image: radial-gradient(
+        var(--tw-gradient-from) var(--tw-gradient-from-position),
+        var(--tw-gradient-to) var(--tw-gradient-to-position)
+    );
+}
+
+/*
+ * v3 line-height parity. v3 responsive text sizes set line-height directly,
+ * overriding a base `leading-*` (and lower responsive sizes) at/above their
+ * breakpoint; v4 routes sizes through `--tw-leading` so `leading-*` always
+ * wins. Re-assert the responsive ladder (ascending) and `lg:leading-snug` last.
+ * Unlayered @media so it wins over the unlayered utilities by source order.
+ */
+@media (min-width: 640px) {
+    .sm\:text-xl { line-height: var(--text-xl--line-height); }
+    .sm\:text-2xl { line-height: var(--text-2xl--line-height); }
+    .sm\:text-3xl { line-height: var(--text-3xl--line-height); }
+}
+@media (min-width: 768px) {
+    .md\:text-2xl { line-height: var(--text-2xl--line-height); }
+    .md\:text-3xl { line-height: var(--text-3xl--line-height); }
+    .md\:text-4xl { line-height: var(--text-4xl--line-height); }
+    .md\:text-7xl { line-height: var(--text-7xl--line-height); }
+    .md\:text-8xl { line-height: var(--text-8xl--line-height); }
+}
+@media (min-width: 1024px) {
+    .lg\:text-3xl { line-height: var(--text-3xl--line-height); }
+    .lg\:text-4xl { line-height: var(--text-4xl--line-height); }
+    .lg\:text-5xl { line-height: var(--text-5xl--line-height); }
+    .lg\:text-6xl { line-height: var(--text-6xl--line-height); }
+}
+@media (min-width: 1024px) {
+    .lg\:leading-snug { line-height: 1.375; }
+}
