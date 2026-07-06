@@ -45,7 +45,7 @@
     "contributors": "https://github.com/TryGhost/Source-ActivityPub/graphs/contributors",
     "devDependencies": {
         "@tailwindcss/cli": "4.3.1",
-        "autoprefixer": "10.5.0",
+        "autoprefixer": "10.5.2",
         "beeper": "2.1.0",
         "concurrently": "10.0.3",
         "cssnano": "8.0.2",
@@ -56,7 +56,7 @@
         "gulp-postcss": "10.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "6.1.0",
-        "postcss": "8.5.15",
+        "postcss": "8.5.16",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.4",
         "tailwindcss": "4.3.1"
