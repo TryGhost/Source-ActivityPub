@@ -44,7 +44,7 @@
     "bugs": "https://github.com/TryGhost/Source-ActivityPub/issues",
     "contributors": "https://github.com/TryGhost/Source-ActivityPub/graphs/contributors",
     "devDependencies": {
-        "@tailwindcss/cli": "4.3.2",
+        "@tailwindcss/cli": "4.3.3",
         "autoprefixer": "10.5.4",
         "beeper": "2.1.0",
         "concurrently": "10.0.5",
@@ -59,7 +59,7 @@
         "postcss": "8.5.26",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.4",
-        "tailwindcss": "4.3.2"
+        "tailwindcss": "4.3.3"
     },
     "browserslist": [
         "defaults"
