@@ -45,7 +45,7 @@
     "contributors": "https://github.com/TryGhost/Source-ActivityPub/graphs/contributors",
     "devDependencies": {
         "@tailwindcss/cli": "4.3.3",
-        "autoprefixer": "10.5.4",
+        "autoprefixer": "10.5.5",
         "beeper": "2.1.0",
         "concurrently": "10.0.5",
         "cssnano": "9.0.2",
