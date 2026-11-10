@@ -47,7 +47,7 @@
         "@tailwindcss/cli": "4.3.5",
         "autoprefixer": "10.6.2",
         "beeper": "2.1.0",
-        "concurrently": "10.0.6",
+        "concurrently": "10.0.7",
         "cssnano": "9.9.0",
         "gscan": "6.7.0",
         "gulp": "5.0.1",
